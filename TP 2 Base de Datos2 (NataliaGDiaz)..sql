@@ -1,10 +1,10 @@
--- Crear una base de datos llamada "bicicleteria" (puedes cambiar el nombre si lo deseas)
+
 CREATE DATABASE bicicleteria;
 
--- Usar la base de datos "bicicleteria"
+
 USE bicicleteria;
 
--- Crear la tabla "clientes" para almacenar información de los clientes
+
 CREATE TABLE clientes (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
@@ -15,7 +15,7 @@ CREATE TABLE clientes (
     codigo_bicicleta INT
 );
 
--- Crear la tabla "bicicletas" para almacenar información de las bicicletas
+
 CREATE TABLE bicicletas (
     codigo INT AUTO_INCREMENT PRIMARY KEY,
     marca VARCHAR(50) NOT NULL,
@@ -25,13 +25,13 @@ CREATE TABLE bicicletas (
     anio_fabricacion INT
 );
 
--- Crear la tabla "tipos_bicicletas" para almacenar información sobre los tipos de bicicletas
+
 CREATE TABLE tipos_bicicletas (
     codigo INT PRIMARY KEY,
     descripcion VARCHAR(50) NOT NULL
 );
 
--- Insertar algunos tipos de bicicletas ficticios en la tabla "tipos_bicicletas"
+
 INSERT INTO tipos_bicicletas (codigo, descripcion) VALUES
     (1, 'Paseo'),
     (2, 'Montaña'),
